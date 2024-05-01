@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>contato</title>
+  </head>
+  <style>
+    *{
+      padding: 0;
+      margin:0;
+  
+    }
+    .contato{
+      border:3px solid #737;
+      padding: 40px;
+      margin:20px;
+      margin-top:210px;
+      background: #0fc1ee;
+    }
+    body{
+      text-align: center;
+      background-color: #2592ad;
+    }
+    .contato input{
+      margin:6px;
+      width: 210px;
+      padding:10px;
+      outline: none;
+      backdrop-filter: blur(30px);
+      border-radius: 5px;
+    }
+    h1{
+      margin-top: -40px;
+    }
+    .contato button{
+      height: 40px;
+      width: 90px;
+      border-radius:9px;
+      background: #747;
+      color:#fff;
+      font-size:20px ;
+    }
+    h3{
+      color:#fff;
+    }
+    .comen button{
+      height: 30px;
+      width: 80px;
+      color:#fff;
+      background: #767;
+    }
+    .comen textarea{
+      outline: none;
+      
+    }
+  </style>
+  <body>
+    <div class="contato">
+      <h1>contato geral</h1>
+      <input type="Email" placeholder="Email">
+      <input type="number" placeholder="numero">
+      <input type="password" placeholder="senha">
+      <button onclick="alerta()" type="button">Enviar</button>
+    </div>
+    <div class="comen">
+    <h3>comentario</h3>
+    <textarea rows="5" cols="20" placeholder="comente"></textarea><br>
+    <button onclick="alerta()" type="button">Enviar</button>
+    </div>
+  </body>
+  <script>
+    function alerta(){
+      alert("Enviado")
+    }
+  </script>
+</html>
